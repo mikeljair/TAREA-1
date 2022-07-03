@@ -1,0 +1,16 @@
+Algoritmo calcular_si_un_numero_es_primo
+	Definir n,cont Como Entero
+	n=0;cont=0
+	Escribir "Ingresar un numero"
+	leer num
+	para acum=1 hasta num Hacer
+		si num%acum=0 Entonces
+			cont=cont+1
+		FinSi
+	FinPara
+	si cont=2 Entonces
+		Escribir num," Es un numero primo"
+	SiNo
+		Escribir num," No es un numero primo"
+	FinSi
+FinAlgoritmo

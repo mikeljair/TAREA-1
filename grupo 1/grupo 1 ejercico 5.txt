@@ -1,0 +1,15 @@
+Algoritmo calcular_la_resolvente
+	Definir a,b,c Como Entero
+	Definir x1,x2 Como Real
+	a <- 0; b <- 0; c <- 0; x1 <- 0; x2 <- 0
+	Escribir 'Ingresar valor de A'
+	Leer a
+	Escribir 'Ingresar valor de B'
+	Leer b
+	Escribir 'Ingresar valor de C'
+	Leer c
+	x1 <- (-b+raiz((b^2)-(4*a*c)))/2*a
+	x2 <- (-b-raiz((b^2)-(4*a*c)))/2*a
+	Escribir 'x1 es igual a ',x1
+	Escribir 'x2 es igual a ',x2
+FinAlgoritmo

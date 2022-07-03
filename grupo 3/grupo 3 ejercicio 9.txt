@@ -1,0 +1,7 @@
+Algoritmo fichas_de_domino
+	para num=0 Hasta 6 Hacer
+		para num_=0 hasta num Hacer
+			Escribir num," - ",num_
+		FinPara
+	FinPara
+FinAlgoritmo

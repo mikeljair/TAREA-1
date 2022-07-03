@@ -1,0 +1,44 @@
+Algoritmo IMC
+	Definir kg Como Real
+	Definir estatura,masa_corporal,libras,m Como Real
+	libras <- 0; estatura <- 0; masa_corporal <- 0; kg <- 0; m <- 0
+	Escribir 'Infgresar peso en libras';Leer libras
+	kg <- libras*(1/2.2046)
+	Escribir 'El peso en kilogramos es:',' ',kg
+	Escribir 'Ingresar estatura en cm'
+	Leer estatura
+	m <- estatura/100
+	masa_corporal <- (kg/m^2)
+	Escribir 'el peso en kg es ',kg
+	Escribir 'La estatura es ',estatura,' cm'
+	Escribir 'El indice de masa corporal es:',' ',masa_corporal
+	Si masa_corporal<16 Entonces
+		Escribir 'Criterio de ingreso',' ',masa_corporal
+	SiNo
+		Si masa_corporal>16 Y masa_corporal<16.9 Entonces
+			Escribir 'Infra peso',' ',masa_corporal
+		SiNo
+			Si masa_corporal>17 Y masa_corporal<18.4 Entonces
+				Escribir 'Bajo peso',' ',masa_corporal
+			SiNo
+				Si masa_corporal>18.5 Y masa_corporal<24.5 Entonces
+					Escribir 'Peso normal',' ',masa_corporal
+				SiNo
+					Si masa_corporal>25 Y masa_corporal<29.9 Entonces
+						Escribir 'Sobrepeso',' ',masa
+					SiNo
+						Si masa_corporal>30 Y masa_corporal<34.9 Entonces
+							Escribir 'Obesidad pre-mórbida'
+						SiNo
+							Si masa_corporal>40 Y masa_corporal<45 Entonces
+								Escribir 'Obesidad mórbida',' ',masa_corporal
+							SiNo
+								Escribir 'Obesidad híper-mórbida',' ',masa_corporal
+							FinSi
+						FinSi
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+FinAlgoritmo

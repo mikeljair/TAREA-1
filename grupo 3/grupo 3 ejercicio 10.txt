@@ -1,0 +1,31 @@
+Algoritmo calcular_promedio_de_esa_serie
+	Definir cont,n,sum Como Entero
+	definir prom Como Real
+	cont=1;n=0;num=1;prom=0;sum=0
+	Escribir "Ingresar la cantidad de numeros de la serie"
+	leer n
+	Mientras cont<=n Hacer
+		Escribir "Ingresar numero de serie"
+		leer num
+		si num=0 Entonces
+			cont=n
+			suma=suma
+		SiNo
+			si cont=1 Entonces
+				suma=num
+				m=m+1
+			SiNo
+				suma=suma+num
+				m=m+1
+			FinSi
+		FinSi
+		cont=cont+1
+	Fin Mientras
+	si num=0 entonces
+		Escribir "Termino"
+		Escribir "El promedio es ", suma/m
+	SiNo
+		prom=suma/n
+		Escribir "El promedio es ",prom
+	FinSi
+FinAlgoritmo

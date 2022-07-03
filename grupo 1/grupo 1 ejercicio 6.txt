@@ -1,0 +1,11 @@
+Algoritmo calcular_a_hipotenusa
+	Definir cateto_a,cateto_b Como Entero
+	Definir hipotenusa Como Real
+	cateto_a <- 0; cateto_b <- 0; hipotenusa <- 0
+	Escribir 'Cateto a'
+	Leer cateto_a
+	Escribir 'Cateto b '
+	Leer cateto_b
+	hipotenusa <- raiz(cateto_a^2+cateto_b^2)
+	Escribir 'La hipotenusa es:',hipotenusa
+FinAlgoritmo

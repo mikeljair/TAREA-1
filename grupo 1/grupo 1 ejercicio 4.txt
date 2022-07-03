@@ -1,0 +1,18 @@
+Algoritmo calcular_suma_resta_multiplicación_división_modúlo
+	Definir a,b Como Entero
+	a <- 0; b <- 0
+	Escribir 'ingresar valor #1'
+	Leer a
+	Escribir 'ingresar valor #2'
+	Leer b
+	suma <- a+b
+	resta <- a-b
+	mult <- a*b
+	division <- a/b
+	modúlo <- a MOD b
+	Escribir 'La suma es igual a ',suma
+	Escribir 'La resta es igual a ',resta
+	Escribir 'La multiplicación es igual a ',mul
+	Escribir 'La división a ',division
+	Escribir 'El modúlo es igual a: ',modúlo
+FinAlgoritmo

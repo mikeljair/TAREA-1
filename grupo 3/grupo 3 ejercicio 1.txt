@@ -1,0 +1,11 @@
+Algoritmo dado_numero_n_imprimir_cuantos_dijitos_tiene
+	Definir num,cont como Entero
+	Escribir "ingresar un valor"
+	leer num
+	cont=0
+	Mientras num>=1 Hacer
+		num=trunc(num/10)
+		cont=cont+1
+	Fin Mientras
+	Escribir "el numero tiene ",cont, " digitos"
+FinAlgoritmo

@@ -1,0 +1,13 @@
+Algoritmo descuento_en_una_tienda
+	Definir descuento Como Real
+	Definir valor_a_pagar,valor_de_compra Como Real
+	descuento <- 0.20; valor_a_pagar <- 0; valor_de_compra <- 0
+	Escribir 'ingresar valor a pagar'
+	Leer valor_de_compra
+	Si valor_de_compra>1000 Entonces
+		valor_a_pagar <- valor_de_compra-(valor_de_compra*descuento)
+		Escribir 'El monto a pagar con descuento del 20% es:',' ',valor_a_pagar
+	SiNo
+		Escribir 'Su monto a pagar sin descuento es:',' ',valor_de_compra
+	FinSi
+FinAlgoritmo

@@ -1,0 +1,12 @@
+Algoritmo imprimir_su_bit_da_paridad
+	Definir bit1, bit2, bit3, bit4, respuesta Como Entero
+	bit1=0; bit2=0; bit3=0; bit4=0; respuesta=0;
+	Escribir "ingrese un numero binario de 4 dijitos"
+	leer bit1,bit2, bit3, bit4
+	respuesta = bit1 + bit2 + bit3 + bit4
+	Si respuesta%2==0 Entonces
+		Escribir "0, es par"
+	SiNo
+		Escribir "1, es impar"
+	Fin Si
+FinAlgoritmo

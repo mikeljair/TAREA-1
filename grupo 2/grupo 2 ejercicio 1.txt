@@ -1,0 +1,12 @@
+Algoritmo año_bisiesto
+	Definir bisiesto,dia,mes,año Como Entero
+	bisiesto <- 0; dia <- 0; mes <- 0; año <- 0
+	Escribir 'Ingresar fecha dd/mm/aaaa'
+	Leer dia,mes,año
+	Escribir dia,'/',mes,'/',año
+	Si año MOD 4=0 Y ((año MOD 100<>0) O (año MOD 400=0)) Entonces
+		Escribir ,año,' Si es un año bisiesto'
+	SiNo
+		Escribir ,año,' No es un año bisiesto'
+	FinSi
+FinAlgoritmo

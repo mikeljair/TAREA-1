@@ -1,0 +1,14 @@
+Algoritmo imprimirlo_por_separado_en_unidades_decenas_centenas_y_unidades_de_mil
+	Definir num,u,d,c,um Como Entero
+	num <- 0; u <- 0; d <- 0; c <- 0; um <- 0
+	Escribir 'número de 4 dígitos'
+	Leer num
+	u <- num MOD 10
+	num <- trunc(num/10)
+	d <- num MOD 10
+	num <- trunc(num/10)
+	c <- num MOD 10
+	um <- trunc(num/10)
+	Escribir 'Unidad ','Decena ','Centena ','Unidad de mil'
+	Escribir ,' ',u,'      ',d,'      ',c,'       ',um
+FinAlgoritmo

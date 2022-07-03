@@ -1,0 +1,47 @@
+Algoritmo promedio_edad_estatura_peso
+	definir edad,peso,estatura,prom_edad,prom_peso,prom_peso_18,promm18 como real
+	definir acum_ed,acum_es,acum_pe Como Entero
+	Definir edad_j,edad_m,edad_p Como Entero
+	Definir n,cont Como Entero
+	cont=1;n=0;edad=0;peso=0;altura=0;
+	acum_ed=0;acum_pe=0;acum_es=0;
+	prom_edad=0;prom_peso=0;prom_es=0;prom_peso_18=0;prom18=0;
+	edad_j=0;edad_m=0;edad_p=0
+	Escribir 'Ingrese el numero de personas'
+	leer n
+	Mientras cont<=n Hacer
+		Escribir 'Ingrese la secuencia edad, peso y altura de la persona # ',cont
+		leer edad,peso,estatura
+		Escribir "La edad es ",edad," años"
+		Escribir "El peso es ",peso," kg"
+		Escribir "La altura es ",estatura," cm"
+		acum_ed=acum_ed+edad
+		acum_pe=acum_pe+peso
+		acum_es=acum_es+estatura
+		cont=cont+1
+		Si edad>=18 & edad<=25 Entonces
+			edad_j=edad_j+1
+		FinSi
+		si edad>=36 Entonces
+			edad_m=edad_m+1
+		FinSi
+		si edad>=18 & edad<=35
+			edad_p=edad_p+1
+			prom18=prom18+peso
+		FinSi
+	FinMientras
+	prom_edad=trunc(acum_ed/n)
+	prom_peso=trunc(acum_pe/n)
+	prom_es=trunc(acum_es/n)
+	prom_peso_18=trunc(prom18/edad_p)
+	Escribir"La edad promedio de todas las personas es ",prom_edad
+	Escribir "El peso promedio de todas las personas es ",prom_peso
+	Escribir "La estatura promedio de todas la personas es ",prom_es," cm"
+	Si edad_j>=1 Entonces
+		Escribir "Hay ",edad_j," personas entre 18 y 25 años"
+	FinSi
+	si edad_m>=1 Entonces
+		Escribir "Hay ",edad_m," personas mayores a 36 años"
+	FinSi
+	Escribir "El promedio de peso ente personas de 18 y 35 años es ",prom_peso_18
+FinAlgoritmo

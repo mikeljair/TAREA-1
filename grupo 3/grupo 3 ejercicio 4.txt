@@ -1,0 +1,18 @@
+Algoritmo calcular_factorial
+	Definir n,cont Como Entero
+	definir factorial Como Real
+	n=0;cont=1;factorial=1
+	Escribir "Ingreasr un numero para calcuar la funcion factorial"
+	leer n
+	si n<=0 Entonces
+		Escribir "El numero no se no se puede calcular"
+	SiNo
+		Mientras cont<=n Hacer
+			cont=cont
+			factorial=factorial*cont
+			Escribir cont
+			cont=cont+1
+		FinMientras
+		Escribir "La funcion factorial de ",n," es ",factorial
+	FinSi
+FinAlgoritmo

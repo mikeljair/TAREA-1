@@ -1,0 +1,12 @@
+Algoritmo horas_y_minutos_a_segundos
+	Definir horas,minutos,segundos_ Como Entero
+	horas=0; minutos=0; segundos_=0
+	escribir"ingresar horas"
+	leer horas
+	escribir"ingresar minutos"
+	leer minutos
+    horas=horas*3600
+    minutos=minutos*60
+	segundos_=horas+minutos
+    escribir "los segundos son ",segundos_
+FinAlgoritmo

@@ -1,0 +1,12 @@
+Algoritmo dado_un_numero_binario_de_4_dijitos_dar_su_balor_en_decimal
+	Definir binario1,binario2,binarrio3,biinario4 Como Entero
+	binario1 <- 0; binario2 <- 0; binario3 <- 0; binario4 <- 0
+	Escribir 'Numero binario de 4 dijitos'
+	Leer binario1,binario2,binario3,binario4
+	binario4 <- binario4*(2^0)
+	binario3 <- binario3*(2^1)
+	binario2 <- binario2*(2^2)
+	binario1 <- binario1*(2^3)
+	Escribir 'la Respuesta en decimal es '
+	Escribir binario4+binario3+binario2+binario1
+FinAlgoritmo

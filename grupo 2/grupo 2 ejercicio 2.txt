@@ -1,0 +1,25 @@
+Algoritmo capicúa_de_5_digitos
+	Definir num,dig1,dog2,dig3,dig4,dig5 Como Entero
+	num <- 0; dig1 <- 0; dig2 <- 0; dig3 <- 0; dig4 <- 0; dig5 <- 0
+	Escribir 'Ingresar numero de 5 digitos'
+	Leer num
+	Si num>=10000 Y num<=99999 Entonces
+		dig1 <- trunc(num/10000) MOD 10
+		dig2 <- trunc(num/1000) MOD 10
+		dig3 <- trunc(num/100) MOD 10
+		dig4 <- trunc(num/10) MOD 10
+		dig5 <- trunc(num MOD 10) MOD 10
+		Escribir 'El digito 1 es',' ',dig1
+		Escribir 'El digito 2 es',' ',dig2
+		Escribir 'El digito 3 es',' ',dig3
+		Escribir 'El digito 4 es',' ',dig4
+		Escribir 'El digito 5 es',' ',dig5
+		Si dig1==dig5 Y dig2==dig4 Entonces
+			Escribir 'El numero que ingreso es capicúa'
+		SiNo
+			Escribir 'El numero que ingreso no es capicúa'
+		FinSi
+	SiNo
+		Escribir 'El numero que ingreso no tiene 5 digitos'
+	FinSi
+FinAlgoritmo

@@ -1,0 +1,11 @@
+Algoritmo imprimir_0_si_es_par_y_1_si_es_impar
+	Definir num Como Entero
+	num <- 0
+	Escribir 'ingresar valor'
+	Leer num
+	Si num MOD 2=0 Entonces
+		Escribir '0'
+	SiNo
+		Escribir '1'
+	FinSi
+FinAlgoritmo

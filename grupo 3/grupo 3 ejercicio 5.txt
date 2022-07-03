@@ -1,0 +1,16 @@
+Algoritmo contraseña_de_10_digitos
+	Definir num,contraseña como Entero
+	cont=0;num=0;contraseña=1234567899
+	Repetir
+		cont=cont+1
+		Escribir "Ingrese contraseña"
+		leer num
+		si num<>contraseña Entonces
+			Escribir "Intento # ",cont
+			Escribir "Contraseña incorrecta"
+		FinSi
+	Hasta Que num=contraseña
+	si num=contraseña Entonces
+		Escribir "Contraseña correcta"
+	FinSi
+FinAlgoritmo

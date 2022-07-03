@@ -1,0 +1,65 @@
+Algoritmo capicúa
+	Definir num, dig1, dog2, dig3, dig4, dig5 Como Entero
+	num=0; dig1=0; dig2=0; dig3=0; dig4=0; dig5=0
+	Escribir "Ingresar numero";
+	leer num
+	Si num>=10000&num<=99999 Entonces
+		dig1=trunc(num/10000)%10
+		dig2=trunc(num/1000)%10
+		dig3=trunc(num/100)%10
+		dig4=trunc(num/10)%10
+		dig5=trunc(num%10)%10
+		Escribir "El digito 4 es ",dig1
+		Escribir "El digito 2 es ",dig2
+		Escribir "El digito 3 es ",dig3
+		Escribir "El digito 4 es ",dig4
+		Escribir "El digito 5 es ",dig5
+		Si dig1==dig5&dig2==dig4 Entonces
+			Escribir "El numero que ingreso es capicúa"
+		SiNo
+			Escribir "El numero que ingreso no es capicúa"
+		Fin Si
+	SiNo
+		Si num>=1000&num<9999 Entonces
+			dig1=trunc(num/1000)%10
+			dig2=trunc(num/100)%10
+			dig3=trunc(num/10)%10
+			dig4=trunc(num%10)%10
+			Escribir "El digito 1 es"," ",dig1
+			Escribir "El digito 2 es"," ",dig2
+			Escribir "El digito 3 es"," ",dig3
+			Escribir "El digito 4 es"," ",dig4
+			Si dig1==dig4&dig2==dig3 Entonces
+				Escribir "El numero que ingreso es capicúa"
+			SiNo
+				Escribir "El numero que ingreso no es capicúa"
+			Fin Si
+		SiNo
+			Si num>=100&num<=999 Entonces
+				dig1=trunc(num/100)%10
+				dig2=trunc(num/10)%10
+				dig3=trunc(num%10)%10
+				Escribir "El digito 1 es"," ",dig1
+				Escribir "El digito 2 es"," ",dig2
+				Escribir "El digito 3 es"," ",dig3
+				Si dig1==dig3 Entonces
+					Escribir "El numero que ingreso es capicúa"
+				SiNo
+					Escribir "El numero que ingreso no es capicúa"
+				Fin Si
+			SiNo
+				si num>=10&num<=99
+					dig1=trunc(num/10)%10
+					dig2=trunc(num%10)%10
+					Escribir "El digito 1 es"," ",dig1
+					Escribir "El digito 2 es"," ",dig2
+					Si dig1==dig2 Entonces
+						Escribir "El numero que ingreso es capicúa"
+					SiNo
+						Escribir "El numero que ingreso no es capicúa"
+					Fin Si
+				FinSi
+			Fin Si
+		Fin Si
+	Fin Si
+FinAlgoritmo

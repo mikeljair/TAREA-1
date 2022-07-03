@@ -1,0 +1,11 @@
+Algoritmo ingresar_valor_en_segundos_e_indicar_su_equivalente_en_minutos_horas_dias
+	Definir segundos_,minutos,horas,dias Como Real
+	segundos_ <- 0; minutos <- 0; horas <- 0; dias <- 0
+	Escribir 'Ingrese valor en segundos'
+	Leer segundos_
+	minutos <- (segundos_/60)
+	horas <- (minutos/60)
+	dias <- (horas/24)
+	Escribir 'Minutos Horas Dias'
+	Escribir minutos,'    ',horas,'    ',dias
+FinAlgoritmo

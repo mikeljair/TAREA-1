@@ -1,0 +1,16 @@
+Algoritmo tablas_de_multiplicar
+	Definir x,t,resultado Como Entero
+	x=0;t=0;resultado=0
+	Escribir "Ingresar numero de la tabla de multiplicar"
+	leer t
+	Si t>=1&t<=10 Entonces
+		Escribir "La tabla del ",t," es"
+		Para x=1 hasta 12 Hacer
+			resultado=t*x
+			Escribir t,"x",x,"=",resultado
+		FinPara
+	SiNo
+		Escribir "El numero ingresado es incorrecto"
+		Escribir "Ingrese un numero de la tabbla de multiplicar del 1 al 10"
+	FinSi
+FinAlgoritmo

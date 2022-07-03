@@ -1,0 +1,25 @@
+Algoritmo mayor_y_menor_de_una_secuencia
+	Definir cont,n,num,mayor_,menor_ Como Entero
+	cont=1;n=0;num=0;mayor_=0;menor_=0
+	Escribir "Ingresar numero que determine el limite de la secuencia"
+	leer n
+	Mientras cont<=n Hacer
+		Escribir "Ingresar variable ",cont
+		leer num
+		si (cont==1) Entonces
+			mayor_=num
+			menor_=num
+		SiNo
+			si num>mayor_ Entonces
+				mayor_=num
+			SiNo
+				si num<menor_ y num<>0 Entonces
+					menor_=num
+				FinSi
+			FinSi
+		FinSi
+		cont=cont+1
+	Fin Mientras
+	Escribir "El numero mayor es ",mayor_
+	Escribir "El numero menor es ",menor_
+FinAlgoritmo
